@@ -1,0 +1,9 @@
+bool isUgly(int n){
+    if(n) 
+    {
+        for( int i = 2 ; i < 6 ; i++)
+            while(!(n % i))
+                n /= i;
+    }
+    return n == 1;
+}
